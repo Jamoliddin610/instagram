@@ -1,0 +1,73 @@
+.carousel {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+.img-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.button-container {
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+
+img {
+    height: 200px;
+    width: 500px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+button {
+    height: 50PX;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #fff;
+}
+
+#right {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+}
+.buttons-insta{
+    gap: 50px;
+button{
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    i{
+        margin-right: 7px;
+        position: relative;
+        top: 2px;
+    }
+} 
+}
+.d-block{
+    display: none;
+}
